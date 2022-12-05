@@ -1,3 +1,4 @@
+import React from "react";
 import {
 	Avatar,
 	AvatarGroup,
@@ -10,13 +11,12 @@ import {
 	ListItemAvatar,
 	ListItemText,
 	Typography,
-} from '@mui/material';
-import React from 'react';
+} from "@mui/material";
 
 const Rightbar = () => {
 	return (
-		<Box flex={1} p={2} sx={{ display: { xs: 'none', sm: 'block' } }}>
-			<Box position="fixed" width={200}>
+		<Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+			<Box position="fixed" width={300}>
 				<Typography variant="h6" fontWeight={100}>
 					Online Friends
 				</Typography>
@@ -83,9 +83,9 @@ const Rightbar = () => {
 				</Typography>
 				<List
 					sx={{
-						width: '100%',
+						width: "100%",
 						maxWidth: 360,
-						bgcolor: 'background.paper',
+						bgcolor: "background.paper",
 					}}
 				>
 					<ListItem alignItems="flex-start">
@@ -100,7 +100,7 @@ const Rightbar = () => {
 							secondary={
 								<React.Fragment>
 									<Typography
-										sx={{ display: 'inline' }}
+										sx={{ display: "inline" }}
 										component="span"
 										variant="body2"
 										color="text.primary"
@@ -127,7 +127,7 @@ const Rightbar = () => {
 							secondary={
 								<React.Fragment>
 									<Typography
-										sx={{ display: 'inline' }}
+										sx={{ display: "inline" }}
 										component="span"
 										variant="body2"
 										color="text.primary"
@@ -154,7 +154,7 @@ const Rightbar = () => {
 							secondary={
 								<React.Fragment>
 									<Typography
-										sx={{ display: 'inline' }}
+										sx={{ display: "inline" }}
 										component="span"
 										variant="body2"
 										color="text.primary"
@@ -162,7 +162,7 @@ const Rightbar = () => {
 										Sandra Adams
 									</Typography>
 									{
-										' — Do you have Paris recommendations? Have you ever…'
+										" — Do you have Paris recommendations? Have you ever…"
 									}
 								</React.Fragment>
 							}
