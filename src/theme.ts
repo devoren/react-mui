@@ -1,20 +1,20 @@
-import { createTheme, ThemeOptions } from '@mui/material';
+import { createTheme } from "@mui/material";
 export const theme = createTheme({
 	palette: {
 		primary: {
-			main: '#34342d',
-			light: 'skyblue',
+			main: "#34342d",
+			light: "skyblue",
 		},
 		secondary: {
-			main: '#3535ff',
+			main: "#3535ff",
 		},
 		otherColor: {
-			main: '#7857dd',
+			main: "#7857dd",
 		},
 	},
 });
 
-declare module '@mui/material/styles' {
+declare module "@mui/material/styles" {
 	interface ThemeOptions {
 		status?: {
 			danger?: string;
