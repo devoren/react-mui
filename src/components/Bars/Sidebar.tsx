@@ -1,5 +1,5 @@
-import React from 'react';
-import Box from '@mui/material/Box';
+import React from "react";
+import Box from "@mui/material/Box";
 import {
 	List,
 	ListItem,
@@ -8,7 +8,7 @@ import {
 	ListItemText,
 	PaletteMode,
 	Switch,
-} from '@mui/material';
+} from "@mui/material";
 import {
 	AccountBox,
 	Article,
@@ -18,7 +18,8 @@ import {
 	Person,
 	Settings,
 	Storefront,
-} from '@mui/icons-material';
+} from "@mui/icons-material";
+import Add from "../Button";
 
 interface ISideBar {
 	mode: PaletteMode | undefined;
@@ -27,8 +28,8 @@ interface ISideBar {
 
 const Sidebar: React.FC<ISideBar> = ({ mode, setMode }) => {
 	return (
-		<Box flex={1} p={2} sx={{ display: { xs: 'none', sm: 'block' } }}>
-			<Box position={'fixed'}>
+		<Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+			<Box position={"fixed"}>
 				<List>
 					<ListItem disablePadding>
 						<ListItemButton component="a" href="#">
@@ -93,13 +94,14 @@ const Sidebar: React.FC<ISideBar> = ({ mode, setMode }) => {
 							</ListItemIcon>
 							<Switch
 								onChange={() =>
-									setMode(mode === 'light' ? 'dark' : 'light')
+									setMode(mode === "light" ? "dark" : "light")
 								}
 							/>
 						</ListItemButton>
 					</ListItem>
 				</List>
 			</Box>
+			<Add />
 		</Box>
 	);
 };

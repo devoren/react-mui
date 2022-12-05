@@ -119,7 +119,7 @@ const Rightbar = () => {
 						<ListItemAvatar>
 							<Avatar
 								alt="Travis Howard"
-								src="/static/images/avatar/2.jpg"
+								src="https://material-ui.com/static/images/avatar/4.jpg"
 							/>
 						</ListItemAvatar>
 						<ListItemText
@@ -146,7 +146,7 @@ const Rightbar = () => {
 						<ListItemAvatar>
 							<Avatar
 								alt="Cindy Baker"
-								src="/static/images/avatar/3.jpg"
+								src="https://material-ui.com/static/images/avatar/5.jpg"
 							/>
 						</ListItemAvatar>
 						<ListItemText

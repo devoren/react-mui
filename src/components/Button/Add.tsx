@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
 	Box,
 	Fab,
@@ -11,7 +11,7 @@ import {
 	Stack,
 	Button,
 	ButtonGroup,
-} from '@mui/material';
+} from "@mui/material";
 import {
 	Add as AddIcon,
 	DateRange,
@@ -19,19 +19,19 @@ import {
 	Image,
 	PersonAdd,
 	VideoCameraBack,
-} from '@mui/icons-material';
+} from "@mui/icons-material";
 
 const StyledModal = styled(Modal)({
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
+	display: "flex",
+	justifyContent: "center",
+	alignItems: "center",
 });
 
 const UserBox = styled(Box)({
-	display: 'flex',
-	alignItems: 'center',
-	gap: '10px',
-	marginBottom: '20px',
+	display: "flex",
+	alignItems: "center",
+	gap: "10px",
+	marginBottom: "20px",
 });
 
 const Add = () => {
@@ -41,9 +41,9 @@ const Add = () => {
 			<Tooltip
 				title="Add"
 				sx={{
-					position: 'fixed',
+					position: "fixed",
 					bottom: 20,
-					left: { xs: 'calc(50% - 25px)', md: 30 },
+					left: { xs: "calc(50% - 25px)", md: 230 },
 				}}
 				onClick={() => setOpen(true)}
 			>
@@ -67,8 +67,8 @@ const Add = () => {
 				>
 					<Typography
 						variant="h6"
-						color={'gray'}
-						textAlign={'center'}
+						color={"gray"}
+						textAlign={"center"}
 					>
 						Create post
 					</Typography>
@@ -77,19 +77,19 @@ const Add = () => {
 							alt="Orlean Steven"
 							src="https://mui.com/static/images/avatar/1.jpg"
 						/>
-						<Typography fontWeight={500} variant={'inherit'}>
+						<Typography fontWeight={500} variant={"inherit"}>
 							Orlean Steven
 						</Typography>
 					</UserBox>
 					<TextField
-						sx={{ width: '100%' }}
+						sx={{ width: "100%" }}
 						id="standard-multiline-static"
 						multiline
 						rows={3}
 						placeholder="What's on your mind?"
 						variant="standard"
 					/>
-					<Stack flexDirection={'row'} gap={1} mt={2} mb={3}>
+					<Stack flexDirection={"row"} gap={1} mt={2} mb={3}>
 						<EmojiEmotions color="primary" />
 						<Image color="secondary" />
 						<VideoCameraBack color="success" />
@@ -101,7 +101,7 @@ const Add = () => {
 						aria-label="outlined primary button group"
 					>
 						<Button>Post</Button>
-						<Button sx={{ width: '100px' }}>
+						<Button sx={{ width: "100px" }}>
 							<DateRange />
 						</Button>
 					</ButtonGroup>

@@ -104,7 +104,7 @@ const Navbar: React.FC<INavBar> = ({ mode, setMode }) => {
 					variant="h6"
 					sx={{ display: { xs: "none", sm: "block" } }}
 				>
-					NERO DEV
+					MUI APP
 				</Typography>
 				<LogoDev sx={{ display: { xs: "block", sm: "none" } }} />
 				{matches ? (
